@@ -4,21 +4,20 @@ import java.util.Scanner;
 
 public class ExceptionHandling {
     public static void main(String[] args) {
-        Scanner scanner=new Scanner( System.in);
+        Scanner input = new Scanner(System.in);
         System.out.println("Enter the divider number");
-        int num = scanner.nextInt();
-        System.out.println();
-        try{
-            int a=50;
-            int result = a/num;
-            System.out.println("Answer is: "+result);
-        }
-        catch (ArithmeticException e){
+        int num = input.nextInt();
+        System.out.println("What is your name?");
+        String name = input.next();
+        System.out.println(name);
+        try {
+            int a = 50;
+            int result = a / num;
+            System.out.println("Answer is: " + result);
+        } catch (ArithmeticException e) {
             System.out.println("An error occurred" + e.getMessage());
-        }
-        finally {
+        } finally {
             System.out.println("End the program");
         }
-
     }
 }
