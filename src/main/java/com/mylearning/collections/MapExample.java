@@ -11,7 +11,7 @@ public class MapExample {
         phoneBook.put("Myra", 8899);
         phoneBook.put("Bala", 5566);
         phoneBook.put("Chandra", 1133);
-        phoneBook.put("XYZ", 0000);
+        phoneBook.put("XYZ", 1100);
 
         int phoneNumber = phoneBook.get("Sowmya");
         System.out.println("Sowmya's phone number is " + phoneNumber);
