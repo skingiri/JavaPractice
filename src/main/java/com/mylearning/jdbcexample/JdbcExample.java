@@ -6,18 +6,16 @@ import java.sql.*;
 public class JdbcExample {
     public static void main(String[] args) throws SQLException {
 
-//        Connection connection = createConnection();
-//        if(connection != null){
-//            System.out.println("Connected Successfully");
-//        }
-//        createTable();
+        Connection connection = createConnection();
+        if(connection != null){
+            System.out.println("Connected Successfully");
+        }
+        createTable();
 //        insertDataIntoRulesTable();
 //        updateDataInRulesTable();
 //        deleteDataFromRulesTable();
-        selectDataFromRulesTable();
+//        selectDataFromRulesTable();
     }
-
-
 
     public static Connection createConnection() {
         Connection connection = null;
